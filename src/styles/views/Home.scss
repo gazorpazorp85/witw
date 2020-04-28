@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+    flex: 1;
+    background-color: $clr1;
+    overflow: auto;
+}
+
+.home-subcontainer {
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+// Colors
+// Light Mode Background
+$clr1: hsl(0, 0%, 95%);
+// Light Mode Text
+$clr2: hsl(200, 15%, 8%);
+// Light Mode Input
+$clr3: hsl(0, 0%, 52%);
+// Dark Mode Text & Light Mode Elements
+$clr4: hsl(0, 0%, 100%);
+// Dark Mode Background
+$clr5: hsl(207, 26%, 17%);
+// Dark Mode Elements
+$clr6: hsl(209, 23%, 22%);
+
+// Breakpoints
+// $mobile-breakpoint: 375px;
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$normal-breakpoint: 1280px;
+$wider-breakpoint: 1680px;

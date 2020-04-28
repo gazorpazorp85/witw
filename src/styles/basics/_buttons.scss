@@ -1,0 +1,83 @@
+.back-btn {
+  height: 40px;
+  width: 137px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px $clr3;
+  background-color: $clr4;
+  background-image: url(assets/img/back-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 32px 12px;
+
+  &.backBtnDark {
+    background-color: $clr6;
+    background-image: url(assets/img/back-arrow-white.png);
+  }
+}
+
+.back-btn:hover {
+  background-image: url(assets/img/back-arrow-grey.png);
+  box-shadow: 3px 3px 8px $clr3;
+  color: $clr3;
+}
+
+.border-country-button {
+  height: 30px;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 6px;
+  background-color: $clr4;
+  box-shadow: 1px 1px 6px $clr3;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+
+  &.borderCountrybtnDarkMode {
+    background-color: $clr6;
+    box-shadow: 1px 1px 6px $clr5;
+  }
+}
+
+.border-country-button:hover {
+  color: $clr3;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  height: 70px;
+  width: 70px;
+  background-color: $clr6;
+  background-image: url(assets/img/back-to-top-light-24.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 1px 1px 6px $clr3;
+  border: none;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+
+  &.darkMode {
+      background-color: $clr4;
+      background-image: url(assets/img/back-to-top-dark-24.png);
+  }
+  &.shown {
+      opacity: 1;
+  }
+}
+
+.show-more-btn {
+  position: relative;
+  width: max-content;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px $clr3;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50px;
+}
+
+.show-more-btn:hover {
+  color: $clr3
+}

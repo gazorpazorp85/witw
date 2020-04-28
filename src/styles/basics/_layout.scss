@@ -1,0 +1,22 @@
+.main-container {
+  margin: 0 80px;
+  padding: 0;
+
+  @include for-wider-layout {
+    min-width: $wider-breakpoint;
+    margin: 0 95px;
+  }
+
+  @include for-wide-layout {
+    min-width: $normal-breakpoint;
+  }
+  @include for-tablet-layout {
+    max-width: $tablet-breakpoint;
+    margin: 0 40px;
+  }
+  @include for-mobile-layout {
+    max-width: $mobile-breakpoint;
+    padding: 0 24px;
+    margin: unset;
+  }
+}

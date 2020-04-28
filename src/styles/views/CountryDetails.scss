@@ -1,0 +1,157 @@
+.country-details-page {
+  background-color: $clr1;
+  flex: 1;
+  overflow: auto;
+}
+
+.country-details-container {
+  padding-top: 78px;
+  background-color: $clr1;
+}
+
+.darkMode {
+  background-color: $clr5;
+  color: $clr4;
+}
+
+.back-btn-text {
+  text-indent: 62px;
+  padding-top: 7px;
+}
+
+.details-subcontainer {
+  margin-top: 80px;
+}
+
+.details-flag-container {
+  height: 400px;
+  width: 560px;
+  margin-right: 120px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.info-container {
+  width: 598px;
+}
+
+.info-subcontainer {
+  flex-wrap: wrap;
+  height: 185px;
+  margin-bottom: 41px;
+}
+
+.details-info-country-name {
+  font-size: 31px;
+  font-family: "nunito-bold";
+  line-height: 27px;
+  margin-top: 48px;
+  margin-bottom: 34px;
+}
+
+.left-subcontainer {
+  margin-right: 133px;
+}
+
+.info-field {
+  height: 19px;
+  margin-bottom: 13px;
+
+  span {
+    font-family: "nunito-bold";
+  }
+
+  div:nth-child(2) {
+    margin-left: 6px;
+  }
+  div:not(:last-child)::after {
+    content: ",";
+    margin-right: 6px;
+  }
+}
+
+.border-countries-container {
+  flex-wrap: wrap;
+}
+
+.category-name {
+  font-family: "nunito-bold";
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.border-country-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+@include for-tablet-layout {
+
+  .country-details-page {
+    padding-bottom: 20px;
+  }
+
+  .country-details-container {
+    padding-top: 40px;
+  }
+
+  .details-subcontainer {
+    flex: 1;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .details-flag-container {
+    width: 100%;
+    height: 350px;
+    margin-right: unset;
+    margin-bottom: 40px;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .info-subcontainer {
+    margin-bottom: 30px;
+  }
+
+  .details-info-country-name {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .left-subcontainer {
+    margin-right: unset;
+  }
+}
+
+@include for-mobile-layout {
+  .country-details-page {
+    padding-bottom: 40px;
+  }
+
+  .details-flag-container {
+    height: 250px;
+    margin-right: unset;
+    margin-bottom: unset;
+  }
+
+  .info-subcontainer {
+    flex-wrap: unset;
+    height: unset;
+    margin-bottom: 41px;
+  }
+
+  .details-info-country-name {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .left-subcontainer {
+    margin-bottom: 20px;
+  }
+}

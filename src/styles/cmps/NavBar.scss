@@ -1,0 +1,42 @@
+.nav-bar-border {
+  box-shadow: 0px 6px 7px $clr1;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+}
+
+.title {
+  font-family: "nunito-bold";
+  font-size: rem(24px);
+  letter-spacing: 0.25px;
+  margin-bottom: 4px;
+}
+
+.navBarDarkMode {
+  background-color: $clr6;
+  color: $clr4;
+}
+
+.dark-mode-btn {
+  height: 30px;
+  text-indent: 25px;
+  line-height: 30px;
+  background: url(assets/img/moon-4-16.png) no-repeat 0px 4px;
+}
+
+.light {
+  background: url(assets/img/sun-16.png) no-repeat 0px 5px;
+}
+
+.dark-mode-btn:hover {
+  color: $clr3;
+  background: url(assets/img/moon-grey.png) no-repeat 0px 4px;
+
+  &.light:hover {
+    background: url(assets/img/sun-grey.png) no-repeat 0px 5px;
+  }
+}
