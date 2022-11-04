@@ -74,11 +74,6 @@ export default {
         let nameA = countryA.name.toLowerCase();
         let nameB = countryB.name.toLowerCase();
         return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
-        // if (nameA < nameB) {
-        //   return -1
-        // } else if (nameA > nameB) {
-        //   return 1
-        // } else return 0;
       });
     }
   },
